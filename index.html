@@ -13,11 +13,13 @@
     />
     <div class="container">
       <div class="form">
-        <input type="text" id="input" />
-        <button id="button">Add</button>
+        <input onkeydown="
+          keyDown(event)
+          " type="text" id="input" />
+        <button onclick="addtodo()" id="button">Add</button>
       </div>
       <ul id="todolist"></ul>
     </div>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
